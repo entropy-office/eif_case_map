@@ -1,5 +1,13 @@
 # eif-submit
 
-While the data, assets, and eif_map.py work as expected -- there are still some difficulties creating a reliable virtual environment for the app to run on. A problem I believe stems from a initial flaw I made when setting homebrew a few years ago. 
+## Project
 
-However, a webdeveloper with a proper developers environment should be able to create a stable virtual environment for the app using the environment.yml and requirements.txt files included in this repository.
+This dashboard provides an interactive visualization of the location and intervention aspects of various early intervention case studies, as provided by the Early Intervention Foundation (EIF). 
+
+## Code
+
+Code can be run by sourcing `eif_map.py`. 
+
+## Known Problems
+
+Virtual environment needs to be re-formatted. 
