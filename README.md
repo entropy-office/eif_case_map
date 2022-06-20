@@ -6,8 +6,41 @@ This dashboard provides an interactive visualization of the location and interve
 
 ## Code
 
-Code can be run by sourcing `eif_map.py`. 
+### Run dashboard
 
-## Known Problems
+To run the dashboard, use: 
 
-Virtual environment needs to be re-formatted. 
+``` bash
+docker-compose build
+docker-compose up
+```
+
+and then navigate to the port `http://0.0.0.0:80`
+
+### Project structure
+
+* `app/` - All scripts, assets and data related to the dashboard
+* `eif_case_map_venv/` - Python virtual environment
+* `.env` - Environment variables for application services
+* `docker-compose.yml` - Docker compose file
+* `Dockerfile` - Docker file
+
+### Contributing
+
+To contribute to this project, please also update the virtual environment. 
+You can activate the python venv with: 
+
+``` bash
+source eif_case_map_venv/bin/activate
+```
+
+Any new dependencies should be install within this environment with something like: 
+
+``` bash
+pip3 install foo
+```
+If any new dependencies are added, please include them in the `app/requirements.txt` with: 
+
+``` bash
+pip3 freeze > app/requirements.txt
+```
